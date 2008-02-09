@@ -10,8 +10,8 @@ WriteMakefile(
     NAME              => 'Image::Seek',
     VERSION_FROM      => 'lib/Image/Seek.pm', # finds $VERSION
     PREREQ_PM         => {}, # e.g., Module::Name => 1.1
-   CC => "g++",
-   XSOPT => "-C++",
+    CC => "g++",
+    XSOPT => "-C++",
     LIBS => ($^O =~ /darwin/ ? ['-lSystem'] : []),
     LD => $ld,
 );
